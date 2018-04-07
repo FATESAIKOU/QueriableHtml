@@ -115,7 +115,6 @@ func BuildScope(body_bytes []byte) (map[int]bool, map[int]bool) {
     in_seq  := make(map[int]bool)
     out_seq := make(map[int]bool)
 
-    //tr := html.NewTokenizer(resp.Body)
     tr := html.NewTokenizer(bytes.NewBuffer(body_bytes))
     cnt := 0
     for {
